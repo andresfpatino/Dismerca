@@ -1,0 +1,63 @@
+
+$assetPath: "/wp-content/uploads"
+$azul: #113C64 
+$azulOscuro: #181717 
+$fontFamily: "D-DIN"
+
+.DSMCA
+    // Blog
+    &__blog-grid   
+        display: flex
+        flex-wrap: wrap
+        margin-top: 40px
+    
+    &__wrap_post
+        width: calc(50% - 20px)
+        margin: 0 10px 40px
+        background-color: #282828
+        background-blend-mode: multiply
+        min-height: 230px
+        transition: 0.5s all
+        &:hover 
+            background-color: $azul
+    
+    &__post-content-wrap
+        height: 100%
+        padding: 20px 30px
+        justify-content: flex-end
+        display: flex
+        flex-direction: column
+
+    &__post-title 
+        text-transform: uppercase
+        a
+            color: #fff
+            font-weight: 700
+            line-height: 1.2em
+            display: block
+            font-size: 19px
+
+    &__post-date
+        background-color: #606060
+        margin-top: -24px
+        position: absolute
+        padding: 4px 10px
+        color: #fff
+        line-height: 1em
+
+    &__read-more
+        background-color: $azul
+        color: #fff
+        text-transform: uppercase
+        font-weight: 700
+        padding: 5px 20px
+        width: 110px
+        &:hover 
+            background-color: #606060
+
+
+@media (max-width: 600px)
+    .DSMCA__wrap_post 
+        width: calc(100% - 20px)
+        margin-bottom: 40px
+        min-height: 250px
